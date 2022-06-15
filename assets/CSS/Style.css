@@ -227,3 +227,26 @@ nav ul a:hover {
     width: 80%;
     font-size: 21px;
 }
+
+
+/* Design de la partie multimedia */
+
+#multimedia .slider-multimedia {
+    display: flex;
+    width: 60%;
+    margin: 40px auto;
+}
+
+#multimedia .slider-image {
+    width: 100%;
+}
+
+#multimedia .slider-content {
+    padding: 15px;
+    background: linear-gradient( 80deg, var(--gradient-white));
+    box-shadow: var(--black-color) 15px 15px 40px;
+}
+
+#multimedia p {
+    font-size: 15px;
+}
