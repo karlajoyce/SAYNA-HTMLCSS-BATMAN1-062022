@@ -9,6 +9,9 @@
     --yellow-light: #F8F184;
     --blue-color: #19567D;
     --white-color: #FFFFFF;
+    --gradient-white: #eddebf67;
+    --gradient-red: #89000977;
+    --black-color: #000;
 }
 
 * {
@@ -37,7 +40,7 @@ button {
 body {
     background-color: black;
     color: white;
-    font-family: 'Space-Grotesk';
+    font-family: 'Space Grotesk';
     font-weight: 300;
 }
 
@@ -76,28 +79,151 @@ nav ul a:hover {
     background-position: top center;
     background-repeat: no-repeat;
     background-color: #19567D;
+    background-size: cover;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+#hero.titre {
+    margin: 20px 0;
+}
+
+.btn {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 22px;
+    padding: 10px 40px;
+    background: linear-gradient( 80deg, var(--gradient-white), var(--gradient-red));
+    box-shadow: var(--black-color) 15px 15px 40px;
+}
+
+#hero .fleche {
+    display: block;
+    margin: 0 auto;
+    margin-top: 285px;
+}
+
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 80px;
+    top: 230px;
+}
+
+.scroll .social {
+    margin-top: 15px;
 }
 
 
 /* Design de la section batman-personnage */
+
+#batman-cinema {
+    margin-top: 40px;
+}
 
 .batman-personnage {
     display: flex;
     justify-content: space-between;
 }
 
+#batman-cinema .titre {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+#batman-cinema .description {
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 80%;
+    font-size: 21px;
+}
+
+#batman-cinema .personnage-info {
+    text-align: center;
+}
+
 
 /* Design de la section nemesis-personnage */
+
+#nemesis {
+    margin-top: 40px;
+}
 
 .nemesis-personnage {
     display: flex;
     justify-content: space-between;
 }
 
+#nemesis .titre {
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+#nemesis .description {
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 80%;
+    font-size: 21px;
+}
+
+#nemesis .personnage-info {
+    text-align: center;
+}
+
 
 /* Design de la section allies-personnage */
+
+#allies {
+    margin-top: 40px;
+}
 
 .allies-personnage {
     display: flex;
     justify-content: space-between;
+}
+
+#allies .titre {
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+#allies .description {
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 80%;
+    font-size: 21px;
+}
+
+#allies .personnage-info {
+    text-align: center;
+}
+
+
+/* Design de la section justice league */
+
+#justice-league {
+    margin-top: 40px;
+}
+
+#justice-league .titre {
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+#justice-league .description {
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 80%;
+    font-size: 21px;
 }
