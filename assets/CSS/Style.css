@@ -103,6 +103,7 @@ nav ul a:hover {
     font-size: 22px;
     padding: 10px 40px;
     height: 30px;
+    margin-top: 10px;
     background: linear-gradient( 80deg, var(--gradient-white), var(--gradient-red));
     box-shadow: var(--black-color) 15px 15px 40px;
 }
