@@ -12,6 +12,10 @@
     --gradient-white: #eddebf67;
     --gradient-red: #89000977;
     --black-color: #000;
+    --grey-color: #c4c4c4;
+    --brown-dark: #0d0e0d;
+    --red-color: #b11313;
+    --brown-light: #EDDEBF;
 }
 
 * {
@@ -44,6 +48,30 @@ body {
     font-weight: 300;
 }
 
+.up-bar {
+    border-top: #727272 2px solid;
+    position: relative;
+    top: 132px;
+    width: 85%;
+    left: 102px;
+}
+
+.left-bar {
+    border-left: #727272 2px solid;
+    position: relative;
+    top: 132px;
+    width: 85%;
+    left: 102px;
+}
+
+.right-bar {
+    border-right: #727272 2px solid;
+    position: relative;
+    top: 132px;
+    width: 85%;
+    left: 102px;
+}
+
 
 /* Design de la navigation */
 
@@ -63,11 +91,17 @@ nav ul a {
     font-size: 30px;
     font-weight: 500;
     font-family: 'rajdhani';
+    font-weight: bold;
     /* text-decoration: none; */
 }
 
 nav ul a:hover {
     color: var(--yellow-color);
+}
+
+.logo:hover {
+    -webkit-filter: invert(4%)sepia(100%)saturate(1680%)hue-rotate(352deg)brightness(109%)contrast(104%);
+    filter: invert(4%)sepia(100%)saturate(1680%)hue-rotate(352deg)brightness(109%)contrast(104%);
 }
 
 
@@ -106,6 +140,7 @@ nav ul a:hover {
     margin-top: 10px;
     background: linear-gradient( 80deg, var(--gradient-white), var(--gradient-red));
     box-shadow: var(--black-color) 15px 15px 40px;
+    opacity: 60%;
 }
 
 .cta {
@@ -127,6 +162,11 @@ nav ul a:hover {
     position: fixed;
     right: 80px;
     top: 230px;
+}
+
+.scroll:hover {
+    -webkit-filter: invert(4%)sepia(100%)saturate(1680%)hue-rotate(352deg)brightness(109%)contrast(104%);
+    filter: invert(4%)sepia(100%)saturate(1680%)hue-rotate(352deg)brightness(109%)contrast(104%);
 }
 
 .scroll .social {
@@ -240,6 +280,16 @@ nav ul a:hover {
 
 /* Design de la partie multimedia */
 
+#multimedia button {
+    position: relative;
+    top: 155px;
+    background-color: transparent;
+}
+
+#multimedia button.right {
+    right: -800px;
+}
+
 #multimedia .slider-multimedia {
     display: flex;
     width: 60%;
@@ -252,10 +302,151 @@ nav ul a:hover {
 
 #multimedia .slider-content {
     padding: 15px;
-    background: linear-gradient( 80deg, var(--gradient-white));
-    box-shadow: var(--black-color) 15px 15px 40px;
+    background-color: grey;
+    /*  border-radius: 20px; */
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 #multimedia p {
     font-size: 15px;
+}
+
+#multimedia .yellow {
+    color: var(--yellow-color);
+}
+
+
+/*  Design de la partie contact - formulaire */
+
+#formulaire {
+    background: linear-gradient( 80deg, var(--brown-light), var(--brown-dark));
+    padding: 70px 0;
+}
+
+#formulaire .container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#formulaire h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+#formulaire .titre {
+    display: block;
+    margin: 10px 0;
+}
+
+#formulaire .container input[type="email"],
+textarea {
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 500px;
+    border-bottom: 2px darkgrey;
+    background-color: transparent;
+    padding-top: 10px 0;
+}
+
+#formulaire .news {
+    margin: 10px 0;
+    margin-bottom: 2px darkgrey;
+}
+
+#formulaire .icon img {
+    transform: rotate(90deg);
+    width: 20px;
+}
+
+:-ms-input-placeholder {
+    color: #F8F184;
+    font-size: 15px;
+}
+
+:-ms-input-placeholder {
+    color: #F8F184;
+    font-size: 15px;
+}
+
+::placeholder {
+    color: #F8F184;
+    font-size: 15px;
+}
+
+.btn-group {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#formulaire input[type="radio"] {
+    opacity: 0;
+}
+
+.btn-group label {
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid;
+    -o-border-image: linear-gradient(69deg, red, blue)1;
+    border-image: linear-gradient(69deg, red, blue)1;
+    font-size: 20px;
+}
+
+input[type='submit'] {
+    display: block;
+    width: 230px;
+    margin: 25px auto;
+    padding: 15px 0;
+    cursor: pointer;
+    background: linear-gradient( 80deg, var(--gradient-white), var(--gradient-red));
+    border: none;
+}
+
+#citation {
+    margin: 90px;
+}
+
+#citation .citation-carte {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#citation .citation-auteur {
+    padding-top: 30px;
+    font-size: 14px;
+    font-family: 'rajdhani';
+}
+
+#citation .guillemet-close {
+    float: right;
+}
+
+
+/* Design du footer */
+
+footer {
+    margin-top: 160px;
+}
+
+footer .text-footer {
+    text-align: center;
+    font-size: 14px;
+}
+
+footer .social-footer {
+    text-align: center;
+    margin: 50px 0;
+}
+
+footer .social-item {
+    padding: 20px;
+}
+
+footer .social-item img {
+    width: 2%;
 }
